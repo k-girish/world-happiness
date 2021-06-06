@@ -22,7 +22,7 @@ class MultiModelPipeline:
         print(f'Best estimator is: \n{self.model.best_params_}')
         print(f'Best estimator cross validation score is: \n{self.model.best_score_}')
         view_all_df(pd.DataFrame(
-            self.results_df.loc[:, ['rank_test_score', 'param_estimator', 'mean_fit_time', 'mean_test_score']]))
+            self.results_df.loc[:, ['rank_test_score', 'mean_test_score', 'params', 'mean_fit_time'] ]))
 
     def show_scores(self, X_train, y_train, X_test, y_test):
         print('For the best estimator:')
