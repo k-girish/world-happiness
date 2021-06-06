@@ -27,8 +27,6 @@ class MultiModelPipeline:
     def show_scores(self, X_train, y_train, X_test, y_test):
         print('For the best estimator:')
         print(f'Cross validation R2 score: {self.model.best_score_}')
-        print(f'Train score is: {self.model.best_score_}')
-        print(f'Cross validation score is: {self.model.best_score_}')
 
         y_pred = self.model.predict(X_train)
         print(f'Training MSE: {mean_squared_error(y_train, y_pred)}')
