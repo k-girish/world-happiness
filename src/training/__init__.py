@@ -7,6 +7,10 @@ from sklearn.pipeline import Pipeline
 
 from src.utils import view_all_df
 
+"""
+    Class that allows cross-validation across multiple models and hyper-parameter using the sklearn pipeline and GridSearchCv features.
+"""
+
 
 class MultiModelPipeline:
     def __init__(self, parameters={'estimator': [RandomForestRegressor()]}, cv=None, verbose=1, scoring='r2'):
