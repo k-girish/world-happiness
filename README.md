@@ -20,15 +20,11 @@ This project is about the analysis of world happiness score. Detaily, a happines
 
 * `/notebooks/`: this folder contains all the jupyter notebooks used for analysis and modelling
 	  
-	* `standardization.ipynb`:
-```diff
-- Pending
-```
+	* `standardization.ipynb`: Notebook for preprocessing the data like standardization 
 	  
-	* `visualization.ipynb`: 
-```diff
-- Pending
-```
+	* `visualization.ipynb`: Notebook for plotting the correlation between factors and visializing happiness socre
+
+        * `clustering.ipynb`: Notebook for clustering the dataset
 	
 	* `predict_happiness.ipynb`: Notebook for modelling the task of predicting happiness score based on country features (section 4 of the report)
 	  
@@ -69,7 +65,7 @@ Girish Kumar ([Web](https://sites.google.com/view/girish-kumar/home), [LinkedIn]
 
 Appilineni Kushal ()
 
-Xue Feng ()
+Xue Feng ([Web]([git](https://github.com/xue1993))
 
 ## Data Source:
 [Kaggle World Happiness Report 2021](https://www.kaggle.com/ajaypalsinghlo/world-happiness-report-2021?select=world-happiness-report.csv)
