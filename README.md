@@ -5,12 +5,12 @@
 ```diff
 - Copy from report ?
 ```
-This project is about the analysis of world happiness score. Detaily, a happiness score is based on the answer of individuals to a survey conducted by the “Gallup World Poll” where people across different countries were asked to rate their own happiness in life on a scale of 0 to 10. Also, a weighted estimate was then calculated amongst the 6 factors - economic production, social support, life expectancy, freedom, absence of corruption, and generosity - determining the extent to which each of them contributed to their happiness, in each country. The above dataset contains data from 150 countries across the globe for the years 2007 - 2020 with some missing parts. This allows us to analyze, see the  relationship between these factors and model the relationship between these factors and the happiness score. Then this model, which we expect to involve as few factors as possible and achieve high accuracy, can be used to predict the happiness score in the future. Also, a wide range of clustering techniques would help us to find  various patterns both amongst different countries and for a particular country over different years.
+This project is about the analysis of world happiness score. A happiness score is based on the answer of individuals to a survey conducted by the “Gallup World Poll” where people across different countries were asked to rate their own happiness in life on a scale of 0 to 10. Also, a weighted estimate was then calculated amongst the 6 factors - economic production, social support, life expectancy, freedom, absence of corruption, and generosity - determining the extent to which each of them contributed to their happiness, in each country. The above dataset contains data from 150 countries across the globe for the years 2007 - 2020 with some missing parts. This allows us to analyze, see the  relationship between these factors and model the relationship between these factors and the happiness score. Then this model, which we expect to involve as few factors as possible and achieve high accuracy, can be used to predict the happiness score in the future. Also, a wide range of clustering techniques would help us to find  various patterns both amongst different countries and for a particular country over different years. Lastly, we group countries belonging to a particular region together and model the relations between happiness score and the aforementioned 6 factors.
 
 
 ## How to read this project?
 
-* Please go through the `reuslts/report.pdf` file to check out a discussion of our experiments and observations. The report details the methods and provides the results along with insights we gained.
+* Please go through the `results/report.pdf` file to check out a discussion of our experiments and observations. The report details the methods and provides the results along with insights we gained.
 
 * We have several Jupyter notebooks that contain the code and visualizations, the purpose of each notebook is detailed in the next section. The notebooks can be conveniently located at the `notebooks` folder.
 
@@ -30,7 +30,7 @@ This project is about the analysis of world happiness score. Detaily, a happines
 	  
 	* `preprocess_for_training.ipynb`: Notebook for preprocessing the data for missing values, standardization and encoding (section 4.4 of the report)
 	  
-	* `region_based_modelling.ipynb`: 
+	* `region_based_modelling.ipynb`: Notebook containing all region based and continent based modelling.
 ```diff
 - Pending
 ```
@@ -63,7 +63,7 @@ If starting with a new/virtual environment, please install all dependencies ment
 
 Girish Kumar ([Web](https://sites.google.com/view/girish-kumar/home), [LinkedIn](https://www.linkedin.com/in/kumagir/), [git](https://github.com/k-girish))
 
-Appilineni Kushal ()
+Appilineni Kushal 
 
 Xue Feng ([Web]([git](https://github.com/xue1993))
 
