@@ -7,7 +7,7 @@ and lower corruption) and plot a time series. We see that happiness is strongly 
 
 ## How to read this project?
 
-* Please go through the `results/report.pdf` file to check out a discussion of our experiments and observations. The report details the methods and provides the results along with insights we gained.
+* Please go through the `report.pdf` file to check out a discussion of our experiments and observations. The report details the methods and provides the results along with insights we gained.
 
 * We have several Jupyter notebooks that contain the code and visualizations, the purpose of each notebook is detailed in the next section. The notebooks can be conveniently located at the `notebooks` folder.
 
