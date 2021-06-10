@@ -2,11 +2,8 @@
 
 ## Abstract
 
-```diff
-- Copy from report ?
-```
-This project is about the analysis of world happiness score. A happiness score is based on the answer of individuals to a survey conducted by the “Gallup World Poll” where people across different countries were asked to rate their own happiness in life on a scale of 0 to 10. Also, a weighted estimate was then calculated amongst the 6 factors - economic production, social support, life expectancy, freedom, absence of corruption, and generosity - determining the extent to which each of them contributed to their happiness, in each country. The above dataset contains data from 150 countries across the globe for the years 2007 - 2020 with some missing parts. This allows us to analyze, see the  relationship between these factors and model the relationship between these factors and the happiness score. Then this model, which we expect to involve as few factors as possible and achieve high accuracy, can be used to predict the happiness score in the future. Also, a wide range of clustering techniques would help us to find  various patterns both amongst different countries and for a particular country over different years. Lastly, we group countries belonging to a particular region together and model the relations between happiness score and the aforementioned 6 factors.
-
+In this project, we apply various machine learning algorithms to the data collected from world happiness report between the years 2007 - 2020. First, we find the correlation between the happiness score and each of the 6 indicators (logged GDP, social support, healthy life expectancy, freedom to make life choices, generosity
+and lower corruption) and plot a time series. We see that happiness is strongly correlated to logged GDP, social support, healthy life expectancy and weakly (or negatively) correlated to freedom, generosity and perception of corruption. Furthermore, there are very little changes in these correlations over the years as seen in the time series plot. We then apply Kmeans, Agglomerative Clustering, Affinity Propagation clustering algorithms to the data to see any underlying clustersing. We find no meaningful clustering in the data. Next, use a suite of modelling approaches to find the best model which could predict happiness score when fed with raw data of a country. Using partial dependency plots, we determine that happiness is strongly correlated to logged GDP, social support, healthy life expectancy, as concluded earlier. We explain the erroneous predictions even in our best fit model using LIME. Lastly, we model countries belonging to a particular region to check for features previously not captured. We see that happiness score is not related (weakly dependent) on health life expectancy in European countries, which is a deviation from previous results. 
 
 ## How to read this project?
 
@@ -30,10 +27,7 @@ This project is about the analysis of world happiness score. A happiness score i
 	  
 	* `preprocess_for_training.ipynb`: Notebook for preprocessing the data for missing values, standardization and encoding (section 4.4 of the report)
 	  
-	* `region_based_modelling.ipynb`: Notebook containing all region based and continent based modelling.
-```diff
-- Pending
-```
+	* `regionbasedmodels.ipynb`: Notebook containing all region based and continent based modelling.
 
 
 * `/src/`: this folder contains custom library functions used in the jupyter notebooks
@@ -57,15 +51,11 @@ If starting with a new/virtual environment, please install all dependencies ment
 
 ## Authors
 
-```diff
-- Add links
-```
-
 Girish Kumar ([Web](https://sites.google.com/view/girish-kumar/home), [LinkedIn](https://www.linkedin.com/in/kumagir/), [git](https://github.com/k-girish))
 
 Appilineni Kushal 
 
-Xue Feng ([Web]([git](https://github.com/xue1993))
+Xue Feng ([git](https://github.com/xue1993))
 
 ## Data Source:
 [Kaggle World Happiness Report 2021](https://www.kaggle.com/ajaypalsinghlo/world-happiness-report-2021?select=world-happiness-report.csv)
